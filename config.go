@@ -1,8 +1,9 @@
 //revive:disable:package-comments
 package service
 
-// Configuration for the server
+// Configuration for the service
 type Configuration struct {
-	Name    string `env:"SERVER_NAME"`
-	Version string `env:"SERVER_VERSION" envDefault:"dev"`
+	Name    string `env:"SERVICE_NAME"`
+	Version string `env:"SERVICE_VERSION" envDefault:"dev"`
+	Address string `env:"SERVICE_ADDRESS" envDefault:"50051"`
 }
